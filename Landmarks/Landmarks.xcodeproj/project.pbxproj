@@ -15,6 +15,8 @@
 		BF25E021266656C8006B2270 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF25DFF6266656C7006B2270 /* ContentView.swift */; };
 		BF25E022266656C8006B2270 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF25DFF7266656C8006B2270 /* Assets.xcassets */; };
 		BF25E023266656C8006B2270 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF25DFF7266656C8006B2270 /* Assets.xcassets */; };
+		BF25E033266663CD006B2270 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF25E032266663CD006B2270 /* CircleImage.swift */; };
+		BF25E034266663CD006B2270 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF25E032266663CD006B2270 /* CircleImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		BF25E017266656C8006B2270 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF25E01B266656C8006B2270 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		BF25E01D266656C8006B2270 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF25E032266663CD006B2270 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 				BF25DFF5266656C7006B2270 /* LandmarksApp.swift */,
 				BF25DFF6266656C7006B2270 /* ContentView.swift */,
 				BF25DFF7266656C8006B2270 /* Assets.xcassets */,
+				BF25E032266663CD006B2270 /* CircleImage.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -310,6 +314,7 @@
 			files = (
 				BF25E020266656C8006B2270 /* ContentView.swift in Sources */,
 				BF25E01E266656C8006B2270 /* LandmarksApp.swift in Sources */,
+				BF25E033266663CD006B2270 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +324,7 @@
 			files = (
 				BF25E021266656C8006B2270 /* ContentView.swift in Sources */,
 				BF25E01F266656C8006B2270 /* LandmarksApp.swift in Sources */,
+				BF25E034266663CD006B2270 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
