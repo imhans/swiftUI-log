@@ -9,8 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, be prepared for the long journey!")
+        Text("Turtle Rock")
             .padding()
+            .font(.title)
     }
 }
 
