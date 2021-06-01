@@ -1,0 +1,37 @@
+SwiftUI Essentials
+
+060121
+Creating and Combining Views 
+
+SwiftUI app life cycle has a structure that conforms to the App protocol
+The structure's body property returns one or more scencs, which in turn provide content for display
+The @main attribute identifies the app's entry point 
+
+Body property
+-only returns a single view 
+
+View files declare two structures by default
+-First structure: conforms to the View protocol and describes the view's content and layoout
+-Second structure: declares a preview for that view
+
+Customizing views
+-can customize a view's display by changing code or using the inspector
+-depending on the type of view you inspect it shows different attributes
+-Modifiers also let you customize your view, which returns a new view
+
+Combining views using stacks
+-you can combine and embed multiple views in stacks, which group views together horizontally, verticall, or back-to-front
+
+Spacer
+-expands to make its containing view use all of the space of its parent view, instead of defining itself
+-For example, a Spacer() inside HStack will affect the HStack, not the other views that the HStack contains
+
+Image view
+-clipShape(Circle): Circle type is a shape that you can use as a mask or as a view by giving the circle a stroke or fill
+
+Views from other frameworks
+-import statement required to use other frameworks
+
+@State attribute
+-allow us to modify values inside a struct, which would normally not be allowed because structs are value types
+-By prefixing a state variable with $, you pass a binding, which is like a reference to the underlying value. When the user interacts with the map, the map updates the region value to match the part of the map that’s currently visible in the user interface
