@@ -35,3 +35,18 @@ Views from other frameworks
 @State attribute
 *allow us to modify values inside a struct, which would normally not be allowed because structs are value types
 *By prefixing a state variable with $, you pass a binding, which is like a reference to the underlying value. When the user interacts with the map, the map updates the region value to match the part of the map that’s currently visible in the user interface
+
+
+060321
+Building Lists and Navigation
+
+Codable conformance
+*makes it easier to load data into a structure from a data file
+
+Types
+*Image type: SwiftUI has to be imported
+*a nested type(Coordinates) can be created as a structure 
+*CLLocationCoordinate2D type: import CoreLocation is required and is useful for interacting with MapKit framework
+
+Create an Array
+
