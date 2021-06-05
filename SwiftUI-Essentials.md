@@ -50,3 +50,14 @@ Types
 
 Create an Array
 
+ModelData
+load(_: ) method 
+*it is to fetch data with a given name from the app's main bundle
+*relies on the return type's conformance to the Codable protocol
+*(_:) is used to define that the parameter is not named
+
+guard-let vs if-let
+*guard-let requires early return and else statement
+*variables in if-let exists only inside the block
+
+
