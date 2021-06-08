@@ -60,9 +60,6 @@ guard-let vs if-let
 *guard-let requires early return and else statement
 *variables in if-let exists only inside the block
 
-060821
-Customizing the Row Preview
-
 Preview Provider Protocol
 *Xcode's canvas automatically recognizes and displays any type in the current editor that conforms to the Preview Provide Protocol
 *A Preview Provider protocol returns one or more views, with options to configure the size and device
@@ -70,3 +67,7 @@ Preview Provider Protocol
 Group
 *is a container for grouping view content
 *Xcode renders the group's child views as seperate previews in the canvas
+
+List View
+
+
