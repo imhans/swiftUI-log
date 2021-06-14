@@ -68,6 +68,16 @@ Group
 *is a container for grouping view content
 *Xcode renders the group's child views as seperate previews in the canvas
 
-List View
+Dynamic Views > List/ForEach
 
+List initializer
+*Lists work with identifiable data. You can make your data identifiable in one of two ways
+*By passing along with your data a key path to a property that uniquely identifies each element
 
+UUID - short for "universally unique identifier"
+*are long hexadecimal strings such as this one: 08B15DB4-2F02-4AB8-A965-67A9C90D8A44.
+
+Navigation View
+*.navigationTitle modifier
+*NavigationLink() is a view that controls a navigation presentation
+*Users click or tap a navigation link to present a view inside a Navigation View
