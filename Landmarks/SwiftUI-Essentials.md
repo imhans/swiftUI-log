@@ -81,3 +81,13 @@ Navigation View
 *.navigationTitle modifier
 *NavigationLink() is a view that controls a navigation presentation
 *Users click or tap a navigation link to present a view inside a Navigation View
+
+.onAppear {} Returns: A view that triggers `action` when this view appears.
+
+<Views Structure>
+ContentView
+    LandmarkList : List in NavigationView
+    NavigationLink : LandmarkRow, destination is LandmarkDetail
+            LandmarkDetail : has NavigationTitle, ScrollView, and all the details
+
+        
