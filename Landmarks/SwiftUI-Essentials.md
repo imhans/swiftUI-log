@@ -90,4 +90,9 @@ ContentView
     NavigationLink : LandmarkRow, destination is LandmarkDetail
             LandmarkDetail : has NavigationTitle, ScrollView, and all the details
 
-        
+061721
+Handling User Input
+
+Codeable protocol 
+*it lets you enable to encode and decode custom data formats, such as JSON, to native Swift objects
+
