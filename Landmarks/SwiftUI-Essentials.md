@@ -96,3 +96,7 @@ Handling User Input
 Codeable protocol 
 *it lets you enable to encode and decode custom data formats, such as JSON, to native Swift objects
 
+State 
+*is a value, or a set of values, that can change over time, and that affects a view’s behavior, content, or layout. 
+*You use a property with the @State attribute to add state to a view.
+
