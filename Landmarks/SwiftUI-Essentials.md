@@ -103,5 +103,9 @@ State
 Toggle View
 *Use $ prefix to access a binding to a state variable, or one of its properties
 
+Observable Object for Storage
+*An observable object is a custom object for your data that can be bound to a view from storage in SwiftUI’s environment. 
+*SwiftUI watches for any changes to observable objects that could affect a view, and displays the correct version of the view after a change.
+
 
 
