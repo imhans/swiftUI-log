@@ -100,3 +100,8 @@ State
 *is a value, or a set of values, that can change over time, and that affects a view’s behavior, content, or layout. 
 *You use a property with the @State attribute to add state to a view.
 
+Toggle View
+*Use $ prefix to access a binding to a state variable, or one of its properties
+
+
+
