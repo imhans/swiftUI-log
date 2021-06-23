@@ -113,9 +113,21 @@ environmentObject ( _ : ) modifier
 @StateObject
 @State
 *Use @State for very simple data like Int, Bool, or String. Think situations like whether a toggle is on or off, or whether a dialog is open or closed.
-*Use @StateObject to create any type that is more complex than what @State can handle. Ensure that the type conforms to ObservableObject, and has @Published wrappers on the properties you would like to cause the view to re-render, or you’d like to update from a view.
-*Always use @StateObject when you are instantiating a model.
-*Use @ObservedObject to allow a parent view to pass down to a child view an already created ObservableObject (via @StateObject).
-*Use @EnvironmentObject to consume an ObservableObject that has already been created in a parent view and then attached via the view’s environmentObject() view modifier.
+*Use the @State property wrapper to mark a value as state, declare the property as private, and give it a default value
+*Use @StateObject to create any type that is more complex than what @State can handle. Ensure that the type conforms to ObservableObject, and has @Published wrappers on the properties you would like to cause the view to re-render, or you’d like to update from a view
+*Always use @StateObject when you are instantiating a model
+*Use @ObservedObject to allow a parent view to pass down to a child view an already created ObservableObject (via @StateObject)
+*Use @EnvironmentObject to consume an ObservableObject that has already been created in a parent view and then attached via the view’s environmentObject() view modifier
+*You use @EnvironmentObject attribute in views that are lower down in the view hierarchy to receive data from views that are higher up
+*You apply this modifier so that views further down in the view hierarchy can read data objects passed down through the environment
 
+$0 is a shortcut to mean "first argument" in a closure
+$0 is the first parameter passed into the closure. $1 is the second parameter, etc
+
+Binding
+*controls the storage for a value, so you can pass data around to different views that need to read or write it
+
+Optional
+e.g. ) .firstIndex(where: { $0.id == landmark.id })!
+*returns the first index in which the value ( landmark.id in this case ) matches in the array
 
