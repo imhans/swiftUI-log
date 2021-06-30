@@ -131,3 +131,9 @@ Optional
 e.g. ) .firstIndex(where: { $0.id == landmark.id })!
 *returns the first index in which the value ( landmark.id in this case ) matches in the array
 
+063021
+
+static var formatter = LengthFormatter()
+*A formatter that provides localized descriptions of linear distances, such as length and height measurements
+
+
