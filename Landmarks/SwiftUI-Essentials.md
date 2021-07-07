@@ -136,4 +136,9 @@ e.g. ) .firstIndex(where: { $0.id == landmark.id })!
 static var formatter = LengthFormatter()
 *A formatter that provides localized descriptions of linear distances, such as length and height measurements
 
+070721
+
+animation(_:) modifier
+*SwiftUI animates any changes to animatable properties of the view. A view’s color, opacity, rotation, size, and other properties are all animatable
+*animation type : .easeInOut, spring(), ...
 
