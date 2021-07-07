@@ -142,3 +142,7 @@ animation(_:) modifier
 *SwiftUI animates any changes to animatable properties of the view. A view’s color, opacity, rotation, size, and other properties are all animatable
 *animation type : .easeInOut, spring(), ...
 
+AnyTransition property ( extension )
+*keeps your code clean as you expand the custom transition
+
+
