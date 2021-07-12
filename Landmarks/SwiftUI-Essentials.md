@@ -156,4 +156,5 @@ Dictionary
 *You use that key to retrieve the corresponding value, which can be any object
 *In other languages, similar data types are known as hashes or associated arrays
 
+CategoryHome, CategoryRow, CategoryItem
 
