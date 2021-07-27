@@ -55,6 +55,7 @@ load(_: ) method
 *it is to fetch data with a given name from the app's main bundle
 *relies on the return type's conformance to the Codable protocol
 *(_:) is used to define that the parameter is not named
+*Even though the view you are seeing doesn’t use a property with the @EnvironmentObject attribute, a child of this view, does. So without the modifier, the preview fails.
 
 guard-let vs if-let
 *guard-let requires early return and else statement
@@ -163,4 +164,11 @@ CategoryHome, CategoryRow, CategoryItem
 .toolbar and .sheet in NavigationView {}
 *toolbar() modifier lets us place bar button items anywhere in the top or bottom space, but only when our view is embedded inside a NavigationView.
 *sheets are used to present new views over existing ones, while still allowing users to drag down to dismiss the new view when they are ready.
+
+@Environment view property(\.editMode)
+*SwiftUI provides storage in the environment for values you can access using the @Environment property wrapper. Access the editMode value to read or write the edit scope.
+
+editMode
+*The mode of a view indicating whether the user can edit its content.
+
 
