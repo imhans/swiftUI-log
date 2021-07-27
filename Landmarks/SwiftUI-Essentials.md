@@ -158,3 +158,9 @@ Dictionary
 
 CategoryHome, CategoryRow, CategoryItem
 
+072621
+
+.toolbar and .sheet in NavigationView {}
+*toolbar() modifier lets us place bar button items anywhere in the top or bottom space, but only when our view is embedded inside a NavigationView.
+*sheets are used to present new views over existing ones, while still allowing users to drag down to dismiss the new view when they are ready.
+
