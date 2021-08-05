@@ -171,4 +171,12 @@ CategoryHome, CategoryRow, CategoryItem
 editMode
 *The mode of a view indicating whether the user can edit its content.
 
+What’s the difference between a modal and non-modal view presentation?
+*The main difference lies in the way you can interact with each screen. While a Non-Modal Screen allows users to simply go back to the parent screen, the Modal Screen requires users to complete an action before returning to the main window (“save” in our example) or cancel the current action.
+*You present a view modally when you want to break out of your app’s normal flow.
+
+
+UIPageViewController
+*A view that represents a UIKit view controller.
+*requires two functions: makeUIViewController(Context) and updateUIViewController(ViewController, Context) 
 
