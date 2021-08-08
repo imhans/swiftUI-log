@@ -180,3 +180,8 @@ UIPageViewController
 *A view that represents a UIKit view controller.
 *requires two functions: makeUIViewController(Context) and updateUIViewController(ViewController, Context) 
 
+Coordinator Type 
+*SwiftUI manages and provides as part of the representable view’s context.
+*SwiftUI calls this makeCoordinator() method before makeUIViewController(context:), so that you have access to the coordinator object when configuring your view controller.
+*The coordinator is a good place to store these controllers, because the system initializes them only once, and before you need them to update the view controller.
+
