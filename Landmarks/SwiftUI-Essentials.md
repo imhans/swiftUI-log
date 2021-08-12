@@ -176,6 +176,10 @@ What’s the difference between a modal and non-modal view presentation?
 *You present a view modally when you want to break out of your app’s normal flow.
 
 
+UIViewRepresentable, UIViewControllerRepresentable
+*Use the UIViewRepresentable protocol to bridge UIKit views into SwiftUI, not view controllers.
+*Create a structure that conforms to UIViewControllerRepresentable and implement the protocol requirements to include a UIViewController in your SwiftUI view hierarchy.
+
 UIPageViewController
 *A view that represents a UIKit view controller.
 *requires two functions: makeUIViewController(Context) and updateUIViewController(ViewController, Context) 
@@ -184,4 +188,7 @@ Coordinator Type
 *SwiftUI manages and provides as part of the representable view’s context.
 *SwiftUI calls this makeCoordinator() method before makeUIViewController(context:), so that you have access to the coordinator object when configuring your view controller.
 *The coordinator is a good place to store these controllers, because the system initializes them only once, and before you need them to update the view controller.
+
+: makeCoordinator() method
+*In this method, you create a delegate or data source for a UIViewControllerRepresentable type
 
