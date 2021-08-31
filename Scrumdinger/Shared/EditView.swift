@@ -38,7 +38,7 @@ struct EditView: View {
                         }
                     }) {
                         Image(systemName: "plus.circle.fill")
-                            .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                            .foregroundColor(newAttendee.isEmpty ? .gray : /*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
                             .accessibilityLabel(Text("Add attendee"))
                     }
                     .disabled(newAttendee.isEmpty)
