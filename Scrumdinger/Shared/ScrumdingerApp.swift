@@ -10,6 +10,8 @@ struct ScrumdingerApp: App {
             NavigationView {
                 ScrumsView(scrums: $scrums)
             }
+            //The method below prevents the error: "displayModeButtonItem is internally managed" for building iPhone App
+            .navigationViewStyle(StackNavigationViewStyle())
         }
     }
 }

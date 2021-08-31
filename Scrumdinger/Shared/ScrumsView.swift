@@ -14,6 +14,8 @@ struct ScrumsView: View {
                 .listRowBackground(scrum.color)
             }
         }
+        // .navigationViewStyle(StackNavigationViewStyle()) in ScrumdingerApp.swift rusults in adding the listStyle method below 
+        .listStyle(InsetGroupedListStyle())
         .navigationTitle("Daily Scrums")
         .navigationBarItems(trailing: Button(action: {}) {
             Image(systemName: "plus")
