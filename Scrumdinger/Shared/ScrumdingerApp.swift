@@ -3,15 +3,20 @@ import SwiftUI
 
 @main
 struct ScrumdingerApp: App {
-    @State private var scrums = DailyScrum.data
+    @ObservedObject private var data = ScrumData()
     
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                ScrumsView(scrums: $scrums)
+                ScrumsView(scrums: $data.scrums) {
+                    data.save()
+                }
             }
             //The method below prevents the error: "displayModeButtonItem is internally managed" for building iPhone App
             .navigationViewStyle(StackNavigationViewStyle())
+            .onAppear {
+                data.load()
+            }
         }
     }
 }
